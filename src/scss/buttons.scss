@@ -1,0 +1,39 @@
+@import "color";
+
+button.main-btn {
+  padding: 25px 40px;
+  border-radius: 90px;
+  background: $main-btn;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-main;
+  &:hover{
+    transform: scale(1.04);
+    box-shadow: 0 4.16px 41.6px 0 rgba(248, 140, 64, 0.2);
+  }
+  @media screen and (max-width: 767px) {
+    padding: 15px 25px;
+    border-radius: 33px;
+    font-size: 1.6rem;
+  }
+}
+
+button.second-btn {
+  padding: 16px 32px;
+  border-radius: 90px;
+  background-color: $secondary-btn;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-main;
+  &:hover{
+    background-color: $orange-color;
+  }
+  @media screen and (max-width: 767px) {
+    background-color: $orange-color;
+    &:hover{
+      box-shadow: 0 4.16px 41.6px 0 rgba(248, 140, 64, 0.2);
+    }
+  }
+}

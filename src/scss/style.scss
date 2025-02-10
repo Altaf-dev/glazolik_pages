@@ -1,0 +1,68 @@
+@import "header";
+@import "logo";
+@import "menu";
+@import "main";
+@import "footer";
+
+@import "container";
+@import "color";
+@import "title";
+@import "buttons";
+@import "form";
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  color: $text-main;
+
+  &:after,
+  &:before {
+    transition: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: $body-color;
+  color: $text-main;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: .3s;
+  outline: 0;
+}
+
+p.opacity-paragraph {
+  color: $text-opacity;
+}
